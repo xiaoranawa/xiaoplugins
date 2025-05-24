@@ -30,20 +30,20 @@ public final class Xiaoplugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        // 显示启动LOGO
+        //TITLE
         Arrays.stream(STARTUP_LOGO).forEach(line -> getLogger().info(line));
 
-        // 生成/加载配置文件
+        //生成/加载配置文件
         saveDefaultConfig();
         reloadConfig();
 
-        // 注册事件和命令
+        //注册事件命令
         getServer().getPluginManager().registerEvents(this, this);
         setupCommands();
     }
 
     private void setupCommands() {
-        // 注册命令执行器
+        //注册命令执行器
         getCommand("xiaoplugin").setExecutor(this);
     }
 
@@ -94,6 +94,6 @@ public final class Xiaoplugin extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        getLogger().info("插件已安全卸载");
+        getLogger().info("哇，感谢使用！插件已安全卸载");
     }
 }
