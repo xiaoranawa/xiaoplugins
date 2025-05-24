@@ -1,0 +1,13 @@
+bancommandlist:
+  - plugins
+  - pl
+  - ver
+  - version
+
+opbypassPermissions: bypass.admin
+
+messages:
+  permission-denied: "&c你没有权限执行此操作！"
+  command-denied: "&c命令 /%command% 已被禁用！"
+  prefix: "&6[小派插件] &r"
+  reload-success: "&a配置文件重载成功！"

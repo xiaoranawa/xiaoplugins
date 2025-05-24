@@ -1,0 +1,15 @@
+name: xiaoplugin
+version: '1.0-SNAPSHOT'
+main: org.plugins.xiaoplugin.Xiaoplugin
+api-version: '1.21'
+commands:
+  xiaoplugin:
+    description: 插件管理命令
+    usage: /xiaoplugin reload
+permissions:
+  xiaoplugin.reload:
+    description: 重载插件权限
+    default: op
+  bypass.admin:
+    description: 绕过命令限制
+    default: op
